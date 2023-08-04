@@ -9,35 +9,37 @@
         table,
         th,
         td {
-            border: 1px solid black;
+            border: 1px solid rgb(216, 4, 4);
         }
     </style>
 </head>
 
 <body>
-    <h1>Welcome to our website</h1>
-    <b>Hello Galatasaray Fan</b>
+    <h1 style="color: rgb(151, 8, 3);"><strong> Welcome to our website</mark></strong></h1>
+    <h3>Hello Galatasaray supporter</h3>
     <h2>Who we are ?</h2>
-    <p>Galatasaray is sport club in Turkey. Galatasaray was founded in 1905 by Ali Samiyen and with his
+    <p style="color: rgb(255, 161, 154);">Galatasaray is sport club in Turkey. Galatasaray was founded in 1905 by Ali
+        Samiyen and with his
         friends.Galatasay is the most popular club in Turkey.More than 50 percent of Turkish people support
         Galatasaray.They have the biggest football Stadium in Turkey. Rams Park has 52.000 seats. The rival of
         galatasaray who is most near to galatasaray has 42.000 seats and also Galatasaray has 23 Super lig titles .</p>
     <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt18821b295af3712d/643a7b8ced7b8b5ee2faaccc/170423_Mauro_Icardi_of_Galatasaray_celebrates_after_scoring_the_team_s_first_goal_with_Sergio_Oliveira_1920.jpg?auto=webp&format=pjpg&width=3840&quality=60"
         alt="gs-foto" width="500" height="333">
     <br>
-    <button><a target="_blank" href="https://tr.wikipedia.org/wiki/Galatasaray_(futbol_tak%C4%B1m%C4%B1)">Click to get
-            more
-            information on
-            wikipedia</a></button>
+    <button><a target="_blank" href="https://tr.wikipedia.org/wiki/Galatasaray_(futbol_tak%C4%B1m%C4%B1)">Wikipedia
+        </a></button>
+
+    <button>TIKLA</button>
 
 
     <br>
     <br>
-    <h2>Players</h2>
+    <h2><u>Players</u></h2>
+
 
 
     <ul>
-        <li>Muslera</li>
+        <li>Fernando Muslera</li>
         <li>Boey</li>
         <li>Angelinho</li>
         <li>Nelson</li>
@@ -69,9 +71,74 @@
         </tr>
     </table>
 
+    <script>
+
+
+        var islem = 1;
+        switch (islem) {
+            case 1:
+                console.log("İslem 1...");
+                break;
+            case 2:
+                console.log("İslem 2...");
+                break;
+            default:
+                console.log("gecersiz islem.");
+        }
+        var objectt =
+        {
+            name: "Omer",
+            surname: "Cakir",
+            number: "541 593 6867",
+            languages: ["python", "c#", "javascript"],
+            return_cv: function () {
+                return "Name :" + this.name + "\nSurname : " + this.surname +
+                    "\nLanguages : " + this.languages + "\nNumber :" + this.number;
+
+            }
+
+        }
+
+
+        console.log(objectt.return_cv());
+        console.log(objectt.name);
+        console.log(objectt.surname);
+        console.log(objectt.number);
+        console.log(objectt.languages);
+
+
+
+        var list = new Array;
+        list.push("index0");
+        console.log(list[0]);
+
+
+        var obje = new Object;
+        obje.name = "Omer";
+
+
+        console.log("Your name is " + obje.name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
 
 
 </body>
+
+
 
 
 </html>
