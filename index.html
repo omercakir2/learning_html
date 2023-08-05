@@ -74,50 +74,22 @@
     <script>
 
 
-        var islem = 1;
-        switch (islem) {
-            case 1:
-                console.log("İslem 1...");
-                break;
-            case 2:
-                console.log("İslem 2...");
-                break;
-            default:
-                console.log("gecersiz islem.");
-        }
-        var objectt =
-        {
-            name: "Omer",
-            surname: "Cakir",
-            number: "541 593 6867",
-            languages: ["python", "c#", "javascript"],
-            return_cv: function () {
-                return "Name :" + this.name + "\nSurname : " + this.surname +
-                    "\nLanguages : " + this.languages + "\nNumber :" + this.number;
+        function get_cv(name, surname, old) {
 
-            }
+            this.name = name;
+            this.surname = surname;
+            this.old = old;
+            return "İsim :" + name + "\n" + "Soyad :" + surname + "\n" + "Old :" + old;
+
 
         }
 
 
-        console.log(objectt.return_cv());
-        console.log(objectt.name);
-        console.log(objectt.surname);
-        console.log(objectt.number);
-        console.log(objectt.languages);
+        console.log(get_cv("emre", "cakir", 14));
 
 
 
-        var list = new Array;
-        list.push("index0");
-        console.log(list[0]);
 
-
-        var obje = new Object;
-        obje.name = "Omer";
-
-
-        console.log("Your name is " + obje.name);
 
 
 
